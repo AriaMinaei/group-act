@@ -1,22 +1,24 @@
 {
-  "name": "stupid-anim-group",
+  "name": "group-act",
   "private": "true",
-  "version": "0.0.0",
+  "version": "0.1.0-dev.1",
   "description": "",
+  "author": "Aria Minaei",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AriaMinaei/group-act.git"
+  },
   "main": "lib/Group.js",
   "scripts": {
     "prepublish": "coffee --bare --compile --output ./lib ./src",
-    "watch": "jitter src lib -b",
+    "watch": "jitter src lib -b"
   },
-
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AriaMinaei/stupid-anim-group.git"
-  },
-  "author": "Aria Minaei",
-  "license": "MIT",
   "devDependencies": {
     "coffee-script": "^1.8.0",
-    "jitter": "~1.3.0",
+    "jitter": "~1.3.0"
+  },
+  "dependencies": {
+    "timing-function": "^0.2.3"
   }
 }
